@@ -37,7 +37,11 @@ function TextInput() {
 
 function CharacterCount() {
   const count = useRecoilValue(charCountState);
-  return <>Character Count: {count}</>;
+  return (
+    <>
+      Character Count: {count}
+    </>
+  );
 }
 
 function CharacterCounter() {
