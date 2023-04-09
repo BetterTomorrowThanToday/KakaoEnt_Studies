@@ -7,7 +7,7 @@ import {
 } from "recoil";
 
 const numState = atom({
-  key:"custom-num"
+  key:"custom-num",
   default:""
 });
 
