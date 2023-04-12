@@ -4,7 +4,7 @@ import Comment from "./Component/CommentList";
 
 function App() {
   const userLog = [
-    {id:1, name: "Kim", comment: "안녕하세요"},
+    {id:1, name: "KimHeeChan", comment: "안녕하세요"},
     {id:2, name: "John", comment:"하이"},
     {id:3, name: "Gustav" ,comment:"할로"}
   ]
