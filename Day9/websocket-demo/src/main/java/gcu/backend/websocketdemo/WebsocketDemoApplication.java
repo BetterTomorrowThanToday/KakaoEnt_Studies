@@ -1,4 +1,4 @@
-package kakao.chatbot.websocketdemo;
+package gcu.backend.websocketdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
