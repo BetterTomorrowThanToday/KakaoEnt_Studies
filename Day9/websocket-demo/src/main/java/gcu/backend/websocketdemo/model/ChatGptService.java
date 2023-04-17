@@ -25,15 +25,16 @@ public class ChatGptService {
         return new HttpEntity<>(requestDto, headers);
     }
 
-//    @MessageMapping("/chat.sendMessage")
-//    @SendTo("/topic/public")
+
+    //이 객체가 답변을 받아옴, 그걸 responseDto 에 넣어줌
     public ChatGptResponseDto getResponse(HttpEntity<ChatGptRequestDto> chatGptRequestDtoHttpEntity) {
         ResponseEntity<ChatGptResponseDto> responseEntity = restTemplate.postForEntity(
                 ChatGptConfig.URL,
                 chatGptRequestDtoHttpEntity,
                 ChatGptResponseDto.class);
 
-        return responseEntity.getBody();
+        ChatGptResponseDto body = responseEntity.getBody();
+        return body;
     }
 
     public ChatGptResponseDto askQuestion(QuestionRequestDto requestDto) {
