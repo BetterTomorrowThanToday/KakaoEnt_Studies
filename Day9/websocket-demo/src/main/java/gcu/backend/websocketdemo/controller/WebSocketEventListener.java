@@ -1,6 +1,6 @@
 package gcu.backend.websocketdemo.controller;
 
-import gcu.backend.websocketdemo.model.ChatMessage;
+import gcu.backend.websocketdemo.model.Dto.ChatMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

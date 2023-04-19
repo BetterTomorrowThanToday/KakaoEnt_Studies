@@ -61,8 +61,13 @@ function sendMessage(event) {
             content: messageInput.value,
             type: 'CHAT'
         };
+        var question = {
+            question: chatMessage.content
+        }
 
+        stompClient.send("/app/chat-gpt/question", {}, JSON.stringify(question));
         stompClient.send("/app/chat.sendMessage", {}, JSON.stringify(chatMessage));
+
         messageInput.value = '';
     }
     event.preventDefault();

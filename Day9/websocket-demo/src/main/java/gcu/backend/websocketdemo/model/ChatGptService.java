@@ -8,8 +8,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -26,7 +24,6 @@ public class ChatGptService {
     }
 
 
-    //이 객체가 답변을 받아옴, 그걸 responseDto 에 넣어줌
     public ChatGptResponseDto getResponse(HttpEntity<ChatGptRequestDto> chatGptRequestDtoHttpEntity) {
         ResponseEntity<ChatGptResponseDto> responseEntity = restTemplate.postForEntity(
                 ChatGptConfig.URL,

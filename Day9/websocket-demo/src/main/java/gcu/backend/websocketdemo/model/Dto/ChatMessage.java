@@ -1,4 +1,4 @@
-package gcu.backend.websocketdemo.model;
+package gcu.backend.websocketdemo.model.Dto;
 
 import lombok.Data;
 
